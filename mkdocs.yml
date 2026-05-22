@@ -1,0 +1,23 @@
+site_name: Sous La Balle - Association de jeux sportifs du Plateau de Petites Roches
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: fr
+  palette:
+    scheme: default
+    primary: blue
+    accent: red
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css

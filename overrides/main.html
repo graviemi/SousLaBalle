@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <div class="slb-banner">
+    <a href="{{ config.site_url | default(nav.homepage.url, true) | url }}" class="slb-banner__link" aria-label="{{ config.site_name }}">
+      <img src="{{ 'assets/banner.png' | url }}" alt="{{ config.site_name }}" class="slb-banner__img">
+    </a>
+  </div>
+  {{ super() }}
+{% endblock %}
+
+{% block site_nav %}{% endblock %}

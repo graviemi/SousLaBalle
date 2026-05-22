@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Les Flos Chaos";
+  src: url("../assets/Les Flos Sage.otf") format("opentype");
+  font-display: swap;
+}
+
+:root {
+  --slb-bg: #3e88c9;
+  --md-text-font: "Les Flos Chaos";
+  --md-code-font: "Les Flos Chaos";
+}
+
+body,
+.md-typeset,
+.md-header,
+.md-tabs,
+.md-footer {
+  font-family: "Les Flos Chaos", sans-serif;
+  font-size: 24px;
+}
+
+body,
+.md-main,
+.md-container,
+.md-content,
+.md-sidebar,
+.md-footer,
+.md-header {
+  background-color: var(--slb-bg);
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--slb-bg);
+}
+
+.slb-banner {
+  background-color: var(--slb-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slb-banner__link {
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  line-height: 0;
+}
+
+.slb-banner__img {
+  --slb-fade: 5%;
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0, black var(--slb-fade), black calc(100% - var(--slb-fade)), transparent 100%),
+    linear-gradient(to bottom, transparent 0, black var(--slb-fade), black calc(100% - var(--slb-fade)), transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0, black var(--slb-fade), black calc(100% - var(--slb-fade)), transparent 100%),
+    linear-gradient(to bottom, transparent 0, black var(--slb-fade), black calc(100% - var(--slb-fade)), transparent 100%);
+  mask-composite: intersect;
+}
+
+.md-header {
+  position: sticky;
+  top: 0;
+}
+
+.md-header__button.md-logo {
+  display: none;
+}
+
+.md-main__inner {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav.md-tabs {
+  background-color: transparent;
+}
+
+ul.md-tabs__list {
+  background-color: #2e78B9;
+}

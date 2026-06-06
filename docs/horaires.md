@@ -1,4 +1,4 @@
-# Horraires et lieu
+# Horaires et lieu
 
 L'activité se déroule au gymnase "Le Plateau" chemin du Bec Margain.
 
